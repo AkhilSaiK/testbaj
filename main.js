@@ -8,7 +8,7 @@ app.use(express.json());
 app
   .route("/bfhl")
   .get((req, res) => {
-    res.status(200).json({ operation_code: 2 });
+    res.status(200).json({ operation_code: 1 });
   })
   .post((req, res) => {
     const data = req.body.data || [];
